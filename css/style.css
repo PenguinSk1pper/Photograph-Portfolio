@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 128px;
+    color: #fff;
+    line-height: 100%;
+}
+
+h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero {
+    background-image: url("/img/hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 173px;
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu h3 {
+    color: #fff;
+    
+}
+
+.menu img {
+    height: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title p {
+    color: #fff;
+}
+
+.sec-about {
+    padding: 128px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.sec-about-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 64px;
+}
+
+.button {
+    display: flex;
+    gap: 16px;    
+    padding: 0 0 8px 0;
+    border-bottom: 3px solid #000;
+}
+
+.button img {
+    width: 16px;
+}
+
+.sec-about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.sec-about-info > img {
+    height: 800px;
+    border-radius: 16px;
+}
+
+.sec-services {
+    background-image: url("../img/sec-services.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 64px;
+    display: flex;
+    gap: 128px;
+}
+
+.sec-services-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+}
