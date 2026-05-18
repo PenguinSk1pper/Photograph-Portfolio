@@ -134,5 +134,5 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: fit-content;
+    width: fit-content; 
 }
