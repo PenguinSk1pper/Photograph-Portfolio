@@ -11,16 +11,52 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="hero">
-            <div class="header">
+                <header class="hero">
+            <div class="hero-header">
                 <img src="img/logo.svg" alt="Logo" class="logo">
-                <div class="menu">
-                    <h3>Meniu</h3>
-                    <img src="img/menu.svg" alt="Menu Icon">
-                </div>
+ 
+                <input type="checkbox" id="burger-toggle">
+ 
+                <label class="menu" for="burger-toggle">
+                    <span class="menu-text-open">Meniu</span>
+                    <span class="menu-text-close">Meniu</span>
+                    <img class="menu-icon-open" src="img/menu.svg" alt="Menu Icon">
+                    <span class="menu-icon-close">✕</span>
+                </label>
+ 
+                <nav class="nav-menu">
+                    <div class="menu-left">
+                        <img class="menu-img-left" src="img/menu-img1.avif" alt="Menu Image">
+                        <img src="img/logo.svg" alt="Logo">
+                        <div class="menu-links">
+                            <div class="menu-link">
+                                <p>Instagram</p>
+                                <img src="img/button-white.svg" alt="Button">
+                            </div>
+                            <div class="menu-link">
+                                <p>Behance</p>
+                                <img src="img/button-white.svg" alt="Button">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-right">
+                        <div class="nav-links">
+                            <a href="index.html">Acasă</a>
+                            <a href="about.html">Despre</a>
+                            <a href="services.html">Servicii</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="gallery.html">Galerie</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                        <div class="menu-copyright">
+                            <img class="menu-img-right" src="img/menu-img2.avif" alt="Menu Image">
+                            <p>© 2026 Diane Nguyen</p>
+                        </div>
+                    </div>
+                </nav>
             </div>
             <div class="title">
-                <h1>Diane Nguyen</h1>
+                <h1>Diane Nguyen</h1>   
                 <p>Fotograf profesionist</p>
             </div>
         </header>
@@ -28,7 +64,7 @@
             <section class="sec-about">
                 <h2>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #BABABA">”</span>Nu doar fotografiez <br>
-                    Surprind emoțiile brute, momentele subtile și poveștile nespuse
+                    Surprind emoțiile brute, momentele subtile și poveștile nespuse care fac viața atât de frumoasă
                 </h2>
                 <div class="sec-about-info">
                     <div class="sec-about-text">
@@ -42,19 +78,19 @@
                 </div> 
             </section>
 
-            <section class="sec-services">
+            <section class="sec-services white-text">
                 <div class="sec-services-info">
                     <div class="sec-services-text">
                         <h2>Ce pot oferi</h2>
                         <p>Ofer o gamă variată de servicii<br>fotografice, surprinzând<br>momentele care contează cel<br>mai mult pentru tine.</p>
                     </div>
-                    <div class="button">
+                    <div class="button" style="border-bottom: 1px solid #f2f2f2;">
                         <a href="services.html"><h3>Vezi mai multe</h3></a>
-                        <img src="img/button.svg" alt="Sageata butonului">
+                        <img src="img/button-white.svg" alt="Sageata butonului">
                     </div>
                 </div>
                 <div class="sec-services-cards">
-                    <div class="sec-services-card">
+                    <div class="sec-services-card1 sec-services-card">
                         <div class="services-card-head">
                             <img src="img/card-icon1.avif" alt="Imaginea cardului">
                             <p class="number">01</p>
@@ -64,7 +100,7 @@
                             <p>Remarcă-te cu un look șlefuit și profesionist.</p>
                         </div>
                     </div>
-                    <div class="sec-services-card">
+                    <div class="sec-services-card2 sec-services-card">
                         <div class="services-card-head">
                             <img src="img/card-icon2.avif" alt="Imaginea cardului">
                             <p class="number">02</p>
@@ -74,7 +110,7 @@
                             <p>Ziua ta, povestea ta — capturată cu măiestrie.</p>
                         </div>
                     </div>
-                    <div class="sec-services-card">
+                    <div class="sec-services-card3 sec-services-card">
                         <div class="services-card-head">
                             <img src="img/card-icon3.avif" alt="Imaginea cardului">
                             <p class="number">03</p>
@@ -84,7 +120,7 @@
                             <p>Surprinde-te în cea mai bună lumină cu portrete compuse cu măiestrie.</p>
                         </div>
                     </div>
-                    <div class="sec-services-card">
+                    <div class="sec-services-card4 sec-services-card">
                         <div class="services-card-head">
                             <img src="img/card-icon4.avif" alt="Imaginea cardului">
                             <p class="number">04</p>
@@ -98,13 +134,13 @@
             </section>
 
             <section class="sec-portfolio">
-                <div class="sec-portfolio-head">
+                <div class="sec-head">
                     <h3>Portfolio</h3>
                     <h3>01</h3>
                 </div>
-                <div>
-                    <h2>Vezi magia cu ochii tăi</h2>
-                    <div>
+                <div class="sec-portfolio-info">
+                    <h2>Vezi magia cu <br>ochii tăi</h2>
+                    <div class="sec-portfolio-text">
                         <p>Răsfoiește o colecție atent aleasă de momente care și-au făcut loc în inimile clienților.</p>
                         <div>
                             <p>Care este stilul meu?</p>
@@ -113,40 +149,40 @@
                     </div>
                 </div>
                 <div class="sec-portfolio-cards">
-                    <div>
+                    <div class="sec-portfolio-card">
                         <img src="img/sec-portfolio1.jpg" alt="Excursie de dimineata">
-                        <div>
-                            <div>
+                        <div class="portfolio-card-info">
+                            <div class="portfolio-card-title">
                                 <h3>Excursie de dimineață</h3>
                                 <p>1/10/25</p>
                             </div>
                             <p>Lifestyle</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="sec-portfolio-card">
                         <img src="img/sec-portfolio2.jpg" alt="Poză pe un scaun">
-                        <div>
-                            <div>
+                        <div class="portfolio-card-info">
+                            <div class="portfolio-card-title">
                                 <h3>Poză pe un scaun</h3>
                                 <p>17/11/25</p>
                             </div>
                             <p>Lifestyle</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="sec-portfolio-card">
                         <img src="img/sec-portfolio3.jpg" alt="Annie și câinele ei Star">
-                        <div>
-                            <div>
+                        <div class="portfolio-card-info">
+                            <div class="portfolio-card-title">
                                 <h3>Annie și câinele ei Star</h3>
                                 <p>21/1/26</p>
                             </div>
                             <p>Lifestyle</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="sec-portfolio-card">
                         <img src="img/sec-portfolio4.jpg" alt="Mireasă și Mire">
-                        <div>
-                            <div>
+                        <div class="portfolio-card-info">
+                            <div class="portfolio-card-title">
                                 <h3>Mireasă și Mire</h3>
                                 <p>17/2/26</p>
                             </div>
@@ -157,25 +193,25 @@
             </section>
 
             <section class="sec-recenzii">
-                <div class="sec-recenzii-head">
+                <div class="sec-head">
                     <h3>Recenzii</h3>
                     <h3>02</h3>
                 </div>
-                <div>
-                    <p>Fiecare fotografie mă transportă înapoi în acele momente speciale. Sunt absolut încântat de ele.</p>
-                    <h2>”Fotografiile au fost uimitoare. A surprins toate micile detalii fără să deranjeze atmosfera.</h2>
+                <div class="sec-recenzii-info">
+                    <p>Fiecare fotografie mă transportă înapoi în acele <br>momente speciale. Sunt absolut încântat de ele.</p>
+                    <h2>”Fotografiile au <br>fost uimitoare. A <br>surprins toate <br>micile detalii fără <br>să deranjeze <br>atmosfera.</h2>
                 </div>
-                <div>
-                    <div>
-                        <img src="img/button-right.svg" alt="Butonul schimbarii recenziilor">
-                        <img src="img/button-right.svg" alt="Butonul schimbarii recenziilor">
+                <div class="sec-recenzii-foot">
+                    <div class="recenzii-buttons">
+                        <img class="recenzii-button" src="img/button-right.svg" alt="Butonul schimbarii recenziilor">
+                        <img class="recenzii-button" src="img/button-right.svg" alt="Butonul schimbarii recenziilor">
                     </div>
-                    <div>
+                    <div class="recenzii-commentator">
                         <img src="img/comment-profile.svg" alt="Profilul utilizatorului">
-                        <div>
-                            <div>
+                        <div class="recenzii-rating-info">
+                            <div class="recenzii-rating">
                                 <p>5.0 / 5</p>
-                                <div>
+                                <div class="recenzii-stars">
                                     <img src="img/star-icon.svg" alt="Star icon">
                                     <img src="img/star-icon.svg" alt="Star icon">
                                     <img src="img/star-icon.svg" alt="Star icon">
@@ -189,52 +225,48 @@
                 </div>
             </section>
 
-            <section class="sec-faq">
-                <div class="sec-faq-head">
+            <section class="sec-faq white-text">
+                <div class="sec-head" style="border-bottom: 1px solid #f2f2f2;">
                     <h3>Întrebări frecvente</h3>
                     <h3>03</h3>
                 </div>
-                <div>
-                    <div>
-                        <div>
+                <div class="faq-info">
+                    <div class="faq-title">
+                        <div class="faq-text">
                             <p>Nu ai găsit răspunsul tău?</p>
                             <p>Nicio problemă! Dacă ai alte întrebări sau ai nevoie de mai multe informații, nu ezita să mă contactezi direct. Sunt mereu bucuroasă să ajut și să mă asigur că te simți încrezător înainte de a rezerva ședința ta foto. Hai să vorbim!</p>
                         </div>
-                        <div class="button">
+                        <div class="button" style="border-bottom: 1px solid #f2f2f2;">
                             <a href="contact.html"><h3>Pune-mi o întrebare</h3></a>
-                            <img src="img/button.svg" alt="Sageata butonului">
+                            <img src="img/button-white.svg" alt="Sageata butonului">
                         </div>
                     </div>
-                    <div>
+                    <div class="faq-content">
                         <h2>Ai întrebări?</h2>
-                        <div>
-                            <div>
-                                <div>
+                        <div class="faq-table">
+                            <div class="faq-table-row">
+                                <div class="faq-question">
                                     <p>Cu cât timp în avans ar trebui să rezerv?</p>
                                     <img src="img/button-open.svg" alt="Open button">
                                 </div>
-                                <p>Pentru a asigura disponibilitatea, este ideal să rezervi cu 3-6 luni în avans, mai ales în perioadele aglomerate precum nunțile sau evenimentele de sărbători.</p>
                             </div>
-                            <div>
-                                <div>
+                            <div class="faq-table-row">
+                                <div class="faq-question">
                                     <p>Care este timpul tău de livrare?</p>
                                     <img src="img/button-open.svg" alt="Open button">
                                 </div>
-                                <p>Timpul meu obișnuit de livrare a fotografiilor este de 4-6 săptămâni. Editez cu grijă fiecare imagine pentru a scoate ce e mai bun din fiecare cadru, ceea ce necesită timp, dar promit că merită așteptarea.</p>
                             </div>
-                            <div>
-                                <div>
+                            <div class="faq-table-row">
+                                <div class="faq-question">
                                     <p>Cât timp va dura până voi primi fotografiile mele?</p>
                                     <img src="img/button-open.svg" alt="Open button">
                                 </div>
-                                <p>De obicei trimit o previzualizare cu câteva fotografii selectate în termen de 1-2 săptămâni după eveniment, astfel încât să poți retrăi unele momente imediat. Galeria completă va fi livrată în 4-6 săptămâni, oferindu-mi timp să perfecționez fiecare detaliu.</p>
                             </div>
-                            <div>
-                                <div>
+                            <div class="faq-table-row">
+                                <div class="faq-question">
                                     <p>Cât costă serviciile?</p>
                                     <img src="img/button-open.svg" alt="Open button">
                                 </div>
-                                <p>Prețurile mele depind de tipul evenimentului, durata acoperirii și orice solicitări speciale pe care le ai. Ofer o gamă de pachete pentru diferite bugete, așa că nu ezita să mă contactezi, și voi fi bucuroasă să îți ofer o ofertă personalizată în funcție de nevoile tale.</p>
                             </div>
                         </div>
                     </div>
@@ -242,13 +274,13 @@
             </section>
 
             <section class="sec-blog">
-                <div class="sec-blog-head">
+                <div class="sec-head">
                     <h3>Blog</h3>
                     <h3>04</h3>
                 </div>
-                <div>
-                    <div>
-                        <div>
+                <div class="sec-blog-info">
+                    <div class="sec-blog-text">
+                        <div class="sec-blog-title">
                             <h2>Blogul meu</h2>
                             <p>Ești curios despre ce se ascunde în spatele unei ședințe foto perfecte? Descoperă cele mai recente sfaturi și povești din culise.</p>
                         </div>
@@ -257,50 +289,50 @@
                             <img src="img/button.svg" alt="Sageata butonului">
                         </div>
                     </div>
-                    <div>
+                    <div class="sec-blog-cards">
                         <img src="img/sec-blog1.webp" alt="Blog card">
                         <img src="img/sec-blog2.jpg" alt="Blog card">
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <p>Ești pregătit să capturezi momentele care contează cel mai mult?</p>
-                            <p>Hai să facem asta. Contactează-mă astăzi!</p>
+        <footer class="white-text">
+            <div class="footer-info">
+                <div class="footer-left">
+                    <div class="footer-text">
+                        <div class="footer-intro">
+                            <p>Ești pregătit să capturezi momentele <br>care contează cel mai mult?</p>
+                            <p>Hai să facem asta. <br>Contactează-mă astăzi!</p>
                         </div>
-                        <div>
+                        <div class="footer-contacts">
                             <p>Hai să vorbim! Sunt aici să ascult ideile tale</p>
                             <p>+373 (60) 97 73 78 <br>dianenguyen@email.com</p>
-                            <div>
+                            <div class="footer-adress">
                                 <p>Fotograf</p>
                                 <p>(Cu sediul în Londra)</p>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h3>Acasă</h3>
-                        <h3>Despre</h3>
-                        <h3>Servicii</h3>
-                        <h3>Blog</h3>
-                        <h3>Galerie</h3>
-                        <h3>Contact</h3>
-                    </div>
-                </div>
-                <div>
                     <img src="img/logo.svg" alt="Logo">
-                    <div>
-                        <div>
-                            <div class="button">
+                </div>
+                <div class="footer-right">
+                    <nav class="nav">
+                        <a href="index.html">Acasă</a>
+                        <a href="about.html">Despre</a>
+                        <a href="services.html">Servicii</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="gallery.html">Galerie</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                    <div class="footer-copyright">
+                        <div class="footer-buttons">
+                            <div class="button" style="border-bottom: 1px solid #f2f2f2;">
                                 <p>Instagram</p>
-                                <img src="img/button.svg" alt="Sageata butonului">
+                                <img src="img/button-white.svg" alt="Sageata butonului">
                             </div>
-                            <div class="button">
+                            <div class="button" style="border-bottom: 1px solid #f2f2f2;">
                                 <p>Behance</p>
-                                <img src="img/button.svg" alt="Sageata butonului">
+                                <img src="img/button-white.svg" alt="Sageata butonului">
                             </div>
                         </div>
                         <p>© 2026 Diane Nguyen</p>

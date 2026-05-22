@@ -8,108 +8,143 @@
         <meta name="author" content="Nica Dan">
         <title>Blog</title>
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="header">
             <img src="img/logo.svg" alt="Logo" class="logo">
-            <div class="menu">
-                <h3>Meniu</h3>
-                <img src="img/menu.svg" alt="Menu Icon">
-            </div>
+            
+            <input type="checkbox" id="burger-toggle">
+            
+            <label class="menu" for="burger-toggle">
+                <span class="menu-text-open">Meniu</span>
+                <span class="menu-text-close">Meniu</span>
+                <img class="menu-icon-open" src="img/menu.svg" alt="Menu Icon">
+                <span class="menu-icon-close">✕</span>
+            </label>
+
+            <nav class="nav-menu">
+                <div class="menu-left">
+                    <img class="menu-img-left" src="img/menu-img1.avif" alt="Menu Image" class="nav-img">
+                    <img src="img/logo.svg" alt="Logo">
+                    <div class="menu-links">
+                        <di class="menu-link">
+                            <p>Instagram</p>
+                            <img src="img/button-white.svg" alt="Button">
+                        </div>
+                        <div class="menu-link">
+                            <p>Behance</p>
+                            <img src="img/button-white.svg" alt="Button">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <div class="nav-links">
+                        <a href="index.html">Acasă</a>
+                        <a href="about.html">Despre</a>
+                        <a href="services.html">Servicii</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="gallery.html">Galerie</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="menu-copyright">
+                        <img class="menu-img-right" src="img/menu-img2.avif" alt="Menu Image" class="nav-img">
+                        <p>© 2026 Diane Ngyen</p>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main>
-            <div>
-                <div>
-                    <h2>Jurnal vizual</h2>
-                    <p>Bine ai venit în jurnalul meu vizual. Aici împărtășesc gânduri din spatele obiectivului, povești despre ședințele foto, sfaturi pentru cei pasionați de fotografie și momente care m-au inspirat. Sper că vei găsi ceva care să te inspire și pe tine.</p>
+        <main class="page-blog">
+            <div class="blog-info">
+                <h2>Jurnal vizual</h2>
+                <p>Bine ai venit în jurnalul meu vizual. Aici împărtășesc gânduri din spatele obiectivului, povești despre ședințele foto, sfaturi pentru cei pasionați de fotografie și momente care m-au inspirat. Sper că vei găsi ceva care să te inspire și pe tine.</p>
+            </div>
+            <div class="blog-cards white-text">
+                <div class="blog-card1 blog-card">
+                    <div class="blog-card-info">
+                        <p>OCT 24, 2025</p>
+                        <img src="img/button-white.svg" alt="Button icon">
+                    </div>
+                    <p>De ce orice afacere are nevoie de fotografie profesională?</p>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <p>OCT 24, 2025</p>
-                            <img src="img/button" alt="Button icon">
-                        </div>
-                        <p>De ce orice afacere are nevoie de fotografie profesională?</p>
+                <div class="blog-card2 blog-card">
+                    <div class="blog-card-info">
+                        <p>OCT 17, 2025</p>
+                        <img src="img/button-white.svg" alt="Button icon">
                     </div>
-                     <div>
-                        <div>
-                            <p>OCT 17, 2025</p>
-                            <img src="img/button" alt="Button icon">
-                        </div>
-                        <p>Te simți stângaci sau nervos în timpul unei ședințe foto? Nu ești singurul!</p>
-                    </div>
-                     <div>
-                        <div>
-                            <p>SEP 13, 2025</p>
-                            <img src="img/button" alt="Button icon">
-                        </div>
-                        <p>Alegerea locației potrivite poate face sau desface o ședință foto.</p>
-                    </div>
-                     <div>
-                        <div>
-                            <p>AUG 23, 2025</p>
-                            <img src="img/button" alt="Button icon">
-                        </div>
-                        <p>Cum să arăți natural în fotografii, chiar dacă ești nervos?</p>
-                    </div>
-                     <div>
-                        <div>
-                            <p>JUL 30, 2025</p>
-                            <img src="img/button" alt="Button icon">
-                        </div>
-                        <p>De ce fotografia profesională este importantă pentru a-ți spune povestea?</p>
-                    </div>
-                     <div>
-                        <div>
-                            <p>JUL 11, 2025</p>
-                            <img src="img/button" alt="Button icon">
-                        </div>
-                        <p>5 sfaturi pentru a te simți confortabil și încrezător în timpul ședinței foto</p>
-                    </div>
+                    <p>Te simți stângaci sau nervos în timpul unei ședințe foto? Nu ești singurul!</p>
                 </div>
-                <div class="button">
-                    <a href="blog.html"><h3>Vezi mai multe</h3></a>
-                    <img src="img/button.svg" alt="Sageata butonului">
+                <div class="blog-card3 blog-card">
+                    <div class="blog-card-info">
+                        <p>SEP 13, 2025</p>
+                        <img src="img/button-white.svg" alt="Button icon">
+                    </div>
+                    <p>Alegerea locației potrivite poate face sau desface o ședință foto.</p>
                 </div>
+                <div class="blog-card4 blog-card">
+                    <div class="blog-card-info">
+                        <p>AUG 23, 2025</p>
+                        <img src="img/button-white.svg" alt="Button icon">
+                    </div>
+                    <p>Cum să arăți natural în fotografii, chiar dacă ești nervos?</p>
+                </div>
+                <div class="blog-card5 blog-card">
+                    <div class="blog-card-info">
+                        <p>JUL 30, 2025</p>
+                        <img src="img/button-white.svg" alt="Button icon">
+                    </div>
+                    <p>De ce fotografia profesională este importantă pentru a-ți spune povestea?</p>
+                </div>
+                <div class="blog-card6 blog-card">
+                    <div class="blog-card-info">
+                        <p>JUL 11, 2025</p>
+                        <img src="img/button-white.svg" alt="Button icon">
+                    </div>
+                    <p>5 sfaturi pentru a te simți confortabil și încrezător în timpul ședinței foto</p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="blog.html"><h3>Vezi mai multe</h3></a>
+                <img src="img/button.svg" alt="Sageata butonului">
             </div>
         </main>
-        <footer>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <p>Ești pregătit să capturezi momentele care contează cel mai mult?</p>
-                            <p>Hai să facem asta. Contactează-mă astăzi!</p>
+        <footer class="white-text">
+            <div class="footer-info">
+                <div class="footer-left">
+                    <div class="footer-text">
+                        <div class="footer-intro">
+                            <p>Ești pregătit să capturezi momentele <br>care contează cel mai mult?</p>
+                            <p>Hai să facem asta. <br>Contactează-mă astăzi!</p>
                         </div>
-                        <div>
+                        <div class="footer-contacts">
                             <p>Hai să vorbim! Sunt aici să ascult ideile tale</p>
                             <p>+373 (60) 97 73 78 <br>dianenguyen@email.com</p>
-                            <div>
+                            <div class="footer-adress">
                                 <p>Fotograf</p>
                                 <p>(Cu sediul în Londra)</p>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h3>Acasă</h3>
-                        <h3>Despre</h3>
-                        <h3>Servicii</h3>
-                        <h3>Blog</h3>
-                        <h3>Galerie</h3>
-                        <h3>Contact</h3>
-                    </div>
-                </div>
-                <div>
                     <img src="img/logo.svg" alt="Logo">
-                    <div>
-                        <div>
-                            <div class="button">
+                </div>
+                <div class="footer-right">
+                    <nav class="nav">
+                        <a href="index.html">Acasă</a>
+                        <a href="about.html">Despre</a>
+                        <a href="services.html">Servicii</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="gallery.html">Galerie</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                    <div class="footer-copyright">
+                        <div class="footer-buttons">
+                            <div class="button" style="border-bottom: 1px solid #f2f2f2;">
                                 <p>Instagram</p>
-                                <img src="img/button.svg" alt="Sageata butonului">
+                                <img src="img/button-white.svg" alt="Sageata butonului">
                             </div>
-                            <div class="button">
+                            <div class="button" style="border-bottom: 1px solid #f2f2f2;">
                                 <p>Behance</p>
-                                <img src="img/button.svg" alt="Sageata butonului">
+                                <img src="img/button-white.svg" alt="Sageata butonului">
                             </div>
                         </div>
                         <p>© 2026 Diane Nguyen</p>
